@@ -19,7 +19,7 @@ async function main() {
 
     for (let i = 1; i < 12; ++i) {
         const res = native.get(1024 * 1024 * 100);
-        console.log("Got ", res.obj.byteLength);
+        console.log("Got ", res.obj.byteLength , "total allocations ", native.allocated());
 
         // give some time to node to do garbage collection
         if ((i % 3) === 0) {
