@@ -7,7 +7,8 @@ app.whenReady().then(function() {
     width: 920,
     height: 720,
     webPreferences: {
-      nodeIntegration: true
+      nodeIntegration: true,
+      contextIsolation: false
     }
   });
   // --- UNCOMMENT THIS IF YOU NEED TO DEBUG ---
